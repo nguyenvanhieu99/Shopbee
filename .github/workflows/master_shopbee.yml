@@ -19,7 +19,7 @@ jobs:
     - name: Set up Java version
       uses: actions/setup-java@v1
       with:
-        java-version: '11'
+        java-version: '8'
 
     - name: Build with Maven
       run: mvn clean install
@@ -49,5 +49,5 @@ jobs:
       with:
         app-name: 'shopbee'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_e74f343f321c4bbfba6f43bba8b1c531 }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_5584255ef6c244758b3648e0c0e5dca2 }}
         package: '*.war'
